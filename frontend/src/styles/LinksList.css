@@ -1,0 +1,104 @@
+.links-list {
+  background-color: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+}
+
+.links-list h2 {
+  margin-bottom: 20px;
+  font-size: 20px;
+  color: var(--text-dark);
+}
+
+.table-wrapper {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+table thead {
+  background-color: var(--secondary-color);
+}
+
+table th {
+  padding: 12px;
+  text-align: left;
+  font-weight: 600;
+  color: var(--text-dark);
+  border-bottom: 2px solid var(--border-color);
+}
+
+table td {
+  padding: 12px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+table tbody tr:hover {
+  background-color: #fafafa;
+}
+
+.code-cell {
+  font-weight: 600;
+  color: var(--primary-color);
+  font-family: monospace;
+}
+
+.url-cell a {
+  word-break: break-all;
+}
+
+.clicks-cell {
+  font-weight: 600;
+  text-align: center;
+}
+
+.date-cell {
+  font-size: 13px;
+  color: var(--text-light);
+}
+
+.actions-cell {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+}
+
+.btn-small {
+  background-color: var(--secondary-color);
+  color: var(--text-dark);
+  padding: 6px 10px;
+  border-radius: 4px;
+  font-size: 12px;
+  border: 1px solid var(--border-color);
+}
+
+.btn-small:hover:not(:disabled) {
+  background-color: var(--primary-color);
+  color: white;
+  border-color: var(--primary-color);
+}
+
+.btn-delete:hover:not(:disabled) {
+  background-color: var(--error-color);
+  border-color: var(--error-color);
+}
+
+@media (max-width: 768px) {
+  table {
+    font-size: 12px;
+  }
+
+  table th,
+  table td {
+    padding: 8px;
+  }
+
+  .links-list {
+    padding: 15px;
+  }
+}
